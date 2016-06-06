@@ -46,7 +46,7 @@ Configuration MySample
             managedRuntimeVersion = "v4.0"
             identityType = "LocalSystem"
             startMode = "AlwaysRunning"
-            MaximumWorkerProcesses = "2"
+            # MaximumWorkerProcesses = "2"
         }
 
         xWebSite MyWeb {
@@ -54,7 +54,7 @@ Configuration MySample
             ApplicationPool = "MyAppPool"
             Ensure = "Present"
             PhysicalPath = "C:\MyDsc\TestWebSite" # Hardcoded website content folder.
-            DirectoryBrowsing = "Enable"
+            # DirectoryBrowsing = "Enable"
             BindingInfo = @(
                         @(MSFT_xWebBindingInformation
                             {
