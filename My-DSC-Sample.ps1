@@ -5,7 +5,7 @@ if(Test-Path ./MySample) {
 
 Configuration MySample
 {
-    Node "Localhost"
+    Node "localhost"
     {
         WindowsFeature IIS {
             Name = "Web-Server"
