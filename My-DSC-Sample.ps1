@@ -46,15 +46,13 @@ Configuration MySample
             managedRuntimeVersion = "v4.0"
             identityType = "LocalSystem"
             startMode = "AlwaysRunning"
-            # MaximumWorkerProcesses = "2"
         }
 
         xWebSite MyWeb {
-            Name = "Web"
+            Name = "MyWeb"
             ApplicationPool = "MyAppPool"
-            Ensure = "Present"
+            Ensure = "Absent"
             PhysicalPath = "C:\MyDsc\TestWebSite" # Hardcoded website content folder.
-            # DirectoryBrowsing = "Enable"
             BindingInfo = @(
                         @(MSFT_xWebBindingInformation
                             {
@@ -69,7 +67,7 @@ Configuration MySample
                             }
                         )
                         )
-            State = "Started"
+            State = "Stopped"
             DependsOn = @("[WindowsFeature]IIS", "[cAppPool]MyAppPool", "[File]WebsiteFolder")
         }
 
