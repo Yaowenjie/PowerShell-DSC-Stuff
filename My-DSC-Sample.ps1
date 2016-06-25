@@ -67,7 +67,7 @@ Configuration MySample
                             }
                         )
                         )
-            State = "Stopped"
+            State = "Started"
             DependsOn = @("[WindowsFeature]IIS", "[cAppPool]MyAppPool", "[File]WebsiteFolder")
         }
 
