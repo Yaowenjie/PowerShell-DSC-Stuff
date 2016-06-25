@@ -51,7 +51,7 @@ Configuration MySample
         xWebSite MyWeb {
             Name = "MyWeb"
             ApplicationPool = "MyAppPool"
-            Ensure = "Absent"
+            Ensure = "Present"
             PhysicalPath = "C:\MyDsc\TestWebSite" # Hardcoded website content folder.
             BindingInfo = @(
                         @(MSFT_xWebBindingInformation
