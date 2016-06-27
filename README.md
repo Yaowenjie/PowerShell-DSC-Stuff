@@ -1,4 +1,4 @@
-#### 本Repo包含：
+﻿#### 本Repo包含：
 
 1. 样例（Pull及Push模式下）
 2. 清除DSC进程的脚本
@@ -7,7 +7,7 @@
 5. 搭建Pull服务器的脚本
 6. Pull模式配置脚本 等
 
-《The DSC Book》中文翻译版：https://yaowenjie.gitbooks.io/the-dsc-book/content/
+《The DSC Book》中文翻译版：https://yaowenjie.gitbooks.io/the-dsc-book/content/  
 
 ### Demo运行步骤
 
@@ -23,3 +23,6 @@ Set-ExecutionPolicy RemoteSigned
 ```
 .\My-DSC-Sample.ps1
 ```
+
+### Suggestion
+Please give your suggestion on github issue. Thanks!
